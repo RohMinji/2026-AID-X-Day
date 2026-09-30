@@ -7,6 +7,10 @@ AID-X Day 행사 안내 페이지예요. PC와 모바일 모두에서 보도록 
 - 구성: 홈 · 프로그램 · 층별 안내 · 셔틀 · 참여 방법 (모바일은 하단 탭, PC는 왼쪽 메뉴)
 - 내용 수정: `index.html` 스크립트 상단의 `EVENT` 블록만 고치면 돼요.
   일정(`sessions`), 장소(`rooms`, `floors`), 셔틀(`shuttles`), 참여 방법(`steps`, `faq`), 공지(`notices`)
+- 전시 28개(Works · Biz · Innovation · Tech 각 7개): 프로그램 탭 → **전시**에서 목록을 보고, 누르면 상세 페이지로 가요.
+  - 상세 페이지 주소: `https://aidxday.pages.dev/agenda01` ~ `agenda28`
+  - 전시 내용은 `exhibits.js` 한 파일만 고치면 목록과 상세 페이지에 모두 반영돼요.
+  - 전시 개수를 바꾸면 `python3 tools/make_agenda_pages.py`로 상세 페이지 파일을 다시 만들어요.
 - 지금은 예시 데이터예요. 실제 정보로 바꾼 뒤 `sample: false`로 바꾸면 상단 안내 띠가 사라져요.
 - 행사 당일 화면 미리보기: 주소 뒤에 `?now=2026-10-14T13:20`을 붙이면 그 시각 기준으로 보여줘요.
 
